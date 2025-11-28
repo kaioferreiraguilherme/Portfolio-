@@ -3,92 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo Digital Profissional – Manicure</title>
-    <link rel="stylesheet" href="../../style.css">
+    <title>Manicure Profissional</title>
 
     <style>
-        body { margin:0; font-family: Poppins, sans-serif; }
-        header {
-            background: url('https://i.imgur.com/VRO0vXt.jpeg') center/cover no-repeat;
-            padding: 80px 20px;
-            text-align: center; color: white;
-            text-shadow: 0 0 10px #000;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff;
+            color: #333;
         }
-        header h1 { font-size: 36px; margin: 0; }
 
-        section { padding: 35px; }
-        h2 { font-size: 24px; margin-bottom: 15px; }
+        .hero {
+            background: url('https://i.imgur.com/86y1Yf7.jpeg') center/cover no-repeat;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
 
-        .servicos div { margin-bottom: 13px; font-size: 18px; }
-        .servicos strong { color: #e6007e; }
+        .hero h1 {
+            font-size: 34px;
+            text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: -10px;
+            text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #e91e63;
+        }
+
+        .servico-item {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .servico-item span {
+            font-weight: bold;
+            color: #e91e63;
+        }
 
         .galeria img {
-            width: 100%; border-radius: 12px; margin-bottom: 10px;
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 15px;
         }
 
-        .dep {
-            background: #f8f8f8; padding: 20px; border-left: 4px solid #e6007e;
-            margin-bottom: 18px; border-radius: 10px;
-        }
-
-        .whats-fixo {
-            position: fixed; bottom: 20px; right: 20px;
-            background: #25D366; color: white; padding: 14px 18px;
-            border-radius: 50px; font-size: 18px; text-decoration: none;
-            box-shadow: 0 0 12px rgba(0,0,0,0.4);
+        .depoimento {
+            background: #fff;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 8px solid #e91e63;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
         }
 
         footer {
-            background: #111; color: white; text-align: center; padding: 20px;
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .whats-fixo {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            background: #25d366;
+            padding: 15px 20px;
+            border-radius: 30px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
     </style>
 </head>
-
 <body>
 
-<header>
-    <h1>Manicure Profissional</h1>
-    <p>Cuidando das suas unhas com qualidade e estilo.</p>
-</header>
-
-<section>
-    <h2>Sobre</h2>
-    <p>Atendimento profissional, higienização completa, esmaltação precisa e excelência no cuidado das suas mãos e pés.</p>
-</section>
-
-<section>
-    <h2>Serviços</h2>
-    <div class="servicos">
-        <div><strong>Manicure:</strong> R$ 20</div>
-        <div><strong>Pedicure:</strong> R$ 25</div>
-        <div><strong>Combo Mãos + Pés:</strong> R$ 40</div>
-        <div><strong>Francesinha:</strong> R$ 15</div>
+    <div class="hero">
+        <div>
+            <h1>Manicure Profissional</h1>
+            <p>Cuidando das suas unhas com qualidade e estilo</p>
+        </div>
     </div>
-</section>
 
-<section>
-    <h2>Galeria</h2>
-    <div class="galeria">
-        <img src="https://i.imgur.com/HdS7GmS.jpeg">
-        <img src="https://i.imgur.com/dNPhPY7.jpeg">
-        <img src="https://i.imgur.com/o9v1pLF.jpeg">
-    </div>
-</section>
+    <section>
+        <h2>Sobre</h2>
+        <p>
+            Atendimento profissional, higienização completa,
+            esmaltação precisa e excelência no cuidado das mãos e pés.
+        </p>
+    </section>
 
-<section>
-    <h2>Depoimentos</h2>
-    <div class="dep">“Melhor manicure que já fui, super caprichosa!” — Maria</div>
-    <div class="dep">“Unhas sempre impecáveis.” — Julia</div>
-</section>
+    <section>
+        <h2>Serviços</h2>
 
-<a class="whats-fixo"
-   href="https://wa.me/SEU_NUMERO?text=Ol%C3%A1!%20Quero%20o%20Cat%C3%A1logo%20Digital%20Profissional%20para%20Manicure%20(premium).%20Quero%20personalizar%20com%20minhas%20fotos.">
-    💬 WhatsApp
-</a>
+        <p class="servico-item"><span>Manicure:</span> R$ 20</p>
+        <p class="servico-item"><span>Pedicure:</span> R$ 25</p>
+        <p class="servico-item"><span>Combo Mãos + Pés:</span> R$ 40</p>
+        <p class="servico-item"><span>Francesinha:</span> R$ 15</p>
+    </section>
 
-<footer>
-    © 2025 Manicure Profissional — Todos os direitos reservados
-</footer>
+    <section>
+        <h2>Galeria</h2>
+
+        <div class="galeria">
+            <img src="https://i.imgur.com/mgkFz5L.jpeg">
+            <img src="https://i.imgur.com/OuLo5Kg.jpeg">
+            <img src="https://i.imgur.com/RqjWq7P.jpeg">
+        </div>
+    </section>
+
+    <section>
+        <h2>Depoimentos</h2>
+
+        <div class="depoimento">“Melhor manicure que já fui, super caprichosa!” — Maria</div>
+        <div class="depoimento">“Unhas sempre impecáveis.” — Julia</div>
+    </section>
+
+    <footer>
+        © 2025 Manicure Profissional — Todos os direitos reservados.
+    </footer>
+
+    <a class="whats-fixo"
+       href="https://wa.me/SEU_NUMERO_AQUI?text=Ol%C3%A1!%20Quero%20o%20Cat%C3%A1logo%20Premium%20de%20Manicure.%20Podemos%20personalizar%3F">
+        WhatsApp
+    </a>
 
 </body>
 </html>
