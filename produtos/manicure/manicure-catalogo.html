@@ -3,66 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo Manicure - Modelo Simples</title>
-    <link rel="stylesheet" href="../../style.css">
+    <title>Catálogo de Manicure</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
-            background: #fff5f9;
+            margin: 0;
+            padding: 0;
+            background: #ffeef6;
+            color: #333;
         }
 
         h1 {
             text-align: center;
-            color: #d63384;
+            color: #e91e63;
+            font-size: 32px;
+            margin-top: 30px;
+        }
+
+        p.subtitulo {
+            text-align: center;
+            margin-top: -10px;
+            color: #444;
+            font-size: 16px;
         }
 
         .servico {
-            background: white;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            border-left: 5px solid #d63384;
+            background: #fff;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-left: 8px solid #e91e63;
         }
 
-        .whatsapp-btn {
-            display: block;
-            margin-top: 20px;
-            padding: 12px;
-            text-align: center;
-            background: #25D366;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
+        .servico h3 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .servico span {
             font-size: 18px;
+            color: #555;
+        }
+
+        .btn-whats {
+            display: block;
+            width: 80%;
+            margin: 25px auto;
+            background: #25d366;
+            color: white;
+            padding: 18px;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 20px;
             font-weight: bold;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
     <h1>Catálogo de Manicure</h1>
-
-    <p style="text-align:center;">Modelo simples — ideal para divulgar serviços e preços</p>
+    <p class="subtitulo">Modelo simples — ideal para divulgar serviços e preços</p>
 
     <div class="servico">
         <h3>Unha Simples</h3>
-        <p>R$ 20,00</p>
+        <span>R$ 20,00</span>
     </div>
 
     <div class="servico">
         <h3>Unha Decorada</h3>
-        <p>R$ 35,00</p>
+        <span>R$ 35,00</span>
     </div>
 
     <div class="servico">
         <h3>Alongamento de Unhas</h3>
-        <p>R$ 80,00</p>
+        <span>R$ 80,00</span>
     </div>
 
-    <a class="whatsapp-btn"
-        href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20o%20Cat%C3%A1logo%20Manicure%20Modelo%20Pronto.%20Como%20funciona%3F">
+    <a class="btn-whats" href="https://wa.me/SEU_NUMERO_AQUI?text=Ol%C3%A1!%20Quero%20o%20Cat%C3%A1logo%20Manicure%20%E2%80%94%20Modelo%20Simples.%20Como%20fa%C3%A7o%20o%20pagamento%3F">
         Chamar no WhatsApp
     </a>
 
